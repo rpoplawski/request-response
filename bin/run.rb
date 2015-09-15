@@ -58,12 +58,31 @@ loop do
     # return an appropriate response
 
     # YOUR CODE GOES BELOW HERE
+
+#unless
+#  @params[:id] == "users" && id == "1"
+#then
+#  puts "Error 404. requested user not found."
+#end
+
+#if
+#  @params[:id] == "users" && id == "1"
+#  first = User.first
+#  puts "#{first.first_name}, #{first.last_name}, #{first.age}"
+#else
+# @users = User.all
+#     @users.each do |user|
+#       puts "#{user.first_name}, #{user.last_name}, #{user.age}"
+#       puts "Message 200."
+#end
+
+#######
   #unless
   #  @params[:id] == "users" && id = "1"
   #  puts "Error 404. Requested user not found."
   #  break
   #end
-
+##############
   if @params[:id] == "1"
     first = User.first
     puts "#{first.first_name}, #{first.last_name}, #{first.age}"
@@ -71,9 +90,11 @@ loop do
   elsif
    @users = User.all
      @users.each do |user|
-       puts "#{user.first_name}, #{user.last_name}, #{user.age}"
-       puts "Message 200"
+       puts "#{user.first_name}, #{user.last_name}, #{user.age} "
+       #puts "Message 200"
      end
+       puts "Message 200"
+#########
     # YOUR CODE GOES ABOVE HERE  ^
     end
   end
