@@ -64,7 +64,6 @@ loop do
   #  break
   #end
 
-# if there is no id in the request, then do this:
   if @params[:id] == "1"
     first = User.first
     puts "#{first.first_name}, #{first.last_name}, #{first.age}"
@@ -75,7 +74,6 @@ loop do
        puts "#{user.first_name}, #{user.last_name}, #{user.age}"
        puts "Message 200"
      end
-
     # YOUR CODE GOES ABOVE HERE  ^
     end
   end
