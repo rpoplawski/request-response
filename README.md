@@ -9,6 +9,13 @@ This folder structure should be suitable for starting a project that uses a data
 * ... ?
 * Profit
 
+1) On the command line, type 'ruby bin/run.rb'. Then press 'enter'. Type 'GET http://localhost:3000/users HTTP/1.1' and you should see ALL of the users from the database printed out to me with an appropriate response code. Type 'ruby console.rb'. Then press 'enter'. This will take the user into 'pry'. Next, type 'User.all' and press 'enter'. This will give the output of the database.
+
+2) On the command line, type 'ruby bin/run.rb'. Then press 'enter'. Type 'GET http://localhost:3000/users/1 HTTP/1.1' and you should see ONLY the user from the database with that id. Type 'ruby console.rb'. Then press 'enter'. This will take the user into 'pry'. Next, type 'User.all' and press 'enter'. This will give the output of the database.
+
+2) On the command line, type 'ruby bin/run.rb'. Then press 'enter'. Type 'GET http://localhost:3000/users/9999999 HTTP/1.1' and you should see a message saying it was not found and the appropriate response code returned.
+ Type 'ruby console.rb'. Then press 'enter'. This will take the user into 'pry'. Next, type 'User.all' and press 'enter'. This will give the output of the database.
+
 
 ## Rundown
 

@@ -1,5 +1,5 @@
 require_relative '../db/setup'
-# Remember to put the requires here for all the classes you write and want to use
+require_relative '../lib/user.rb'# Remember to put the requires here for all the classes you write and want to use
 
 def parse_params(uri_fragments, query_param_string)
   params = {}
@@ -58,7 +58,25 @@ loop do
     # return an appropriate response
 
     # YOUR CODE GOES BELOW HERE
+  #unless
+  #  @params[:id] == "users" && id = "1"
+  #  puts "Error 404. Requested user not found."
+  #  break
+  #end
+
+# if there is no id in the request, then do this:
+  if @params[:id] == "1"
+    first = User.first
+    puts "#{first.first_name}, #{first.last_name}, #{first.age}"
+
+  elsif
+   @users = User.all
+     @users.each do |user|
+       puts "#{user.first_name}, #{user.last_name}, #{user.age}"
+       puts "Message 200"
+     end
 
     # YOUR CODE GOES ABOVE HERE  ^
+    end
   end
 end
